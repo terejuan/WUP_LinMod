@@ -33,6 +33,12 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ## Model 1 SIM~ARMS
 
+```{r}
+plot(SIMS~ARM,data=data)
+```
+
+In the plot date we can see that as SIMS goes up so does ARM.
+
 ### scatterplot
 
 ### Numerical results
