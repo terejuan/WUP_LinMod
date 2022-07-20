@@ -61,6 +61,12 @@ There is a positive correlation between SIMS and ARM, with our numeric result nu
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+
 #### Predict at target point
 
 
