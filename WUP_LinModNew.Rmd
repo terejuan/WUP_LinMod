@@ -112,9 +112,15 @@ There’s  is a higher  correlation between SIMS and ARM then in SIMS and GRIP, 
 model.2 <- lm(SIMS~GRIP,data=data)
 summary.lm(model.2)
 ```
-The inferential result gave us a Residual standard error of 1.295 in GRIP, and Adjusted R-squared of 0.4053. comparing SIMS and GRIP to SIMS and ARM, ARM is better because it gave us a higher Adjusted R-squared and a  Residual standard error was lowe.
+The inferential result gave us a Residual standard error of 1.295 in GRIP, and Adjusted R-squared of 0.4053. comparing SIMS and GRIP to SIMS and ARM, ARM is better because it gave us a higher Adjusted R-squared and a  Residual standard error was lower.
 
 #### predict model.2 at target point
+
+```{r}
+predict.lm(model.2, tgp, interval = "prediction")
+```
+
+
 
 #### now add the model fit to our plot for model.2
   
