@@ -65,13 +65,26 @@ There is a positive correlation between SIMS and ARM, with our numeric result nu
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
-
+the residual standard error of 1.226 that’s  the standard deviation across the line, the standard Adjusted R-squared is at  0.467
 
 #### Predict at target point
 
+```{r}
+tgp=data.frame(ARM=88, GRIP=94)
+predict.lm(model.1, tgp, interval = "prediction")
+```
+
+out target point is at low -1.726209 and highest 3.138977.
 
 #### scatterplot with model fit
-  
+ 
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+```
+```{r}
+basicNN + geom_point() + geom_lm()
+```
+
 
 ## Model 2 SIM~GRIP
 
