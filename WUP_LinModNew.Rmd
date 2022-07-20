@@ -123,6 +123,10 @@ predict.lm(model.2, tgp, interval = "prediction")
 
 
 #### now add the model fit to our plot for model.2
+
+```{r}
+basicNN_GRIP + geom_point() + geom_lm()
+```
   
 
 
