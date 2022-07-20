@@ -78,9 +78,7 @@ out target point is at low -1.726209 and highest 3.138977.
 
 #### scatterplot with model fit
  
-```{r}
-basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
-```
+
 ```{r}
 basicNN + geom_point() + geom_lm()
 ```
