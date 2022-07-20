@@ -41,8 +41,23 @@ In the plot date we can see that as SIMS goes up so does ARM.
 
 ### scatterplot
 
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+```
+```{r}
+basicNN + geom_point()
+```
+
+This plot shows  us as SIMD increases  so does ARM.
+
+
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
+
+There is a positive correlation between SIMS and ARM, with our numeric result number 0.6860073 showing us a positive  number.
 
 ### Inferential  (Build model.1)
 
