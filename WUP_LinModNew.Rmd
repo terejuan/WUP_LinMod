@@ -176,6 +176,7 @@ We are making a comparison between mode 1 and model 3 by running  it on the ANOV
 anova(model.2,model.3)
 ```
 
+The ARM and GRIP is Beter then just GRIP model, the p- value is low meaning that the chances of this happening is very low.
 
 
 
