@@ -143,6 +143,12 @@ By comparing SIMS~ARM+GRIP the correlation between SIMS and ARM  is bigger varia
   
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+
+lm(formula = SIMS = -5.433871 + 0.037311 * ARM  + 0.024470 * GRIP, data = data.
 
 
 #### predict model.3 at target point
