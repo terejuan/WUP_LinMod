@@ -143,6 +143,8 @@ By comparing SIMS~ARM+GRIP the correlation between SIMS and ARM  is bigger varia
   
 ### Inferential  (Build 2-dimentional model.3)
 
+
+
 #### predict model.3 at target point
   
 
