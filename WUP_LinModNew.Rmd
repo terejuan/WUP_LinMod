@@ -160,6 +160,10 @@ On model 3 we got the prediction that the GRIP and ARM went up 0.1496476 and the
 
 ## Comparing nested models ANOVA Test
 
+```{r}
+anova(model.1,model.3)
+```
+
 ### Model.1 vs Model.3
 ### Model.2 vs Model.3
 
