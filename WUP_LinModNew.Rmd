@@ -132,9 +132,14 @@ basicNN_GRIP + geom_point() + geom_lm()
 
 ## Model 3 SIM~ARM+GRIP
 
+
 ### Numerical results (cor)
 
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
 `
+By comparing SIMS~ARM+GRIP the correlation between SIMS and ARM  is bigger variable then ARM or GRIP alone, but as we put  ARM and GRIP together  they have a higher  correlation.
   
 ### Inferential  (Build 2-dimentional model.3)
 
