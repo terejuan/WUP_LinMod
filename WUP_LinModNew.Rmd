@@ -160,6 +160,9 @@ On model 3 we got the prediction that the GRIP and ARM went up 0.1496476 and the
 
 ## Comparing nested models ANOVA Test
 
+
+### Model.1 vs Model.3
+
 ```{r}
 anova(model.1,model.3)
 ```
@@ -167,8 +170,14 @@ anova(model.1,model.3)
 We are making a comparison between mode 1 and model 3 by running  it on the ANOVA test, and when we ran to predict SIMS with both ARM and GRIP it gave us a residual sum of square of 188.43 for ARM and GRIP, the same testing also gave us 243.07 for ARM. and based on these number and the probability of F is that it gave us a really small number showing us there is no difference if we use ARM or GRIP, or just ARM alone. We reject the null hypothesis being that the number of of F is too small. Meaning they are not the same, Both arm and grip are a better model.
 
 
-### Model.1 vs Model.3
 ### Model.2 vs Model.3
+
+```{r}
+anova(model.2,model.3)
+```
+
+
+
 
 ## Informally compare Model.1 with model.2
 
