@@ -152,6 +152,7 @@ lm(formula = SIMS = -5.433871 + 0.037311 * ARM  + 0.024470 * GRIP, data = data.
 
 
 #### predict model.3 at target point
+
 ```{r}
 predict.lm(model.3, tgp, interval = "prediction")
 ```
@@ -177,8 +178,6 @@ anova(model.2,model.3)
 ```
 
 The ARM and GRIP is Beter then just GRIP model, the p- value is low meaning that the chances of this happening is very low.
-
-
 
 ## Informally compare Model.1 with model.2
 
