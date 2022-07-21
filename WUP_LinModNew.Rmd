@@ -152,6 +152,10 @@ lm(formula = SIMS = -5.433871 + 0.037311 * ARM  + 0.024470 * GRIP, data = data.
 
 
 #### predict model.3 at target point
+
+```{r}
+predict.lm(model.3, tgp, interval = "prediction")
+```
   
 
 ## Comparing nested models ANOVA Test
