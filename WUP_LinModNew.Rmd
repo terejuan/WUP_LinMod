@@ -181,3 +181,8 @@ Statistically ARM and GRIP is a Better model and is  greatly different then just
 
 ## Informally compare Model.1 with model.2
 
+```{r}
+anova(model.1,model.3)
+```
+
+As we compare model 1 and model 3 Residual sum of  square give us a value of 188.44 ARM and the value of GRIP is 243.07 the difference between them is a -25. thus shows us that the model with ARM is better then GRIP, and it also didn’t  give us a p- value because they don’t  depend of each other. they are independent. We based our conclusion on the residual sum of square (RSS).
